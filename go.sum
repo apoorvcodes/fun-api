@@ -1,0 +1,10 @@
+github.com/gominima/cors v1.0.1 h1:eWfwVPp1SPw8i2BzXZ8VajMIcTA/vS7aMiRjDhy784E=
+github.com/gominima/cors v1.0.1/go.mod h1:1WbGyJ/PUlE7/mxvjC4ckEOH1Xr6EFT7FZoCfucjhU8=
+github.com/gominima/go-requests v1.1.0 h1:zPMyGw/FgCVDW4+K/6Axlee8UCSqBA0MkYxDhKSwmjE=
+github.com/gominima/go-requests v1.1.0/go.mod h1:sFjrw3uPbUJ+RLTDtJRu+xQLmuh+7FypPe7ndth+Vw4=
+github.com/gominima/middlewares v0.0.0-20220311150028-42294a2d0978 h1:BOcProAijKtVI2PMwqvVqEucyFyg0PoE2zeDDT02QhQ=
+github.com/gominima/middlewares v0.0.0-20220311150028-42294a2d0978/go.mod h1:Xu8p7FEwkNqD3rgBMUgcTkH9uEzDrCPOBqLrGqs9MQI=
+github.com/gominima/minima v0.1.2-alpha.0.20220212044950-054e20ca2c72 h1:CMtzoJb3WxDZ8X7ZlFpJTC1xdalSRG5uIZX2F1aXExo=
+github.com/gominima/minima v0.1.2-alpha.0.20220212044950-054e20ca2c72/go.mod h1:P5UfLGNw2HbXoGrP0MOavT5mxfpMfZZHbhwCsTy257c=
+github.com/rs/cors v1.8.2 h1:KCooALfAYGs415Cwu5ABvv9n9509fSiG5SQJn/AQo4U=
+github.com/rs/cors v1.8.2/go.mod h1:XyqrcTp5zjWr1wsJ8PIRZssZ8b/WMcMf71DJnit4EMU=
