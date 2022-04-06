@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+ Init()
  app := minima.New()
  app.Use(cors.New().Default())
  app.UseRaw(middleware.Logger)
@@ -15,5 +16,5 @@ func main() {
  app.Get("/", func(res *minima.Response, req *minima.Request) {
 	 res.OK().Send("Hello World")
  })
- app.Listen(":3000")
+ app.Listen(GetENV("PORT"))
 }
