@@ -26,4 +26,5 @@ func ParseJokes() []schema.Joke {
 		panic(err)
 	}
 	return jokes
+
 }
