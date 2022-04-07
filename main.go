@@ -14,7 +14,7 @@ import (
 func main() {
 	Init()
 	app := minima.New()
-	app.Use(cors.New().Default())
+	app.Use(cors.New().AllowAll())
 	app.UseRaw(middleware.Logger)
 	app.Static("/static", "./Static")
 	app.NotFound(func(res *minima.Response, req *minima.Request) {
@@ -24,7 +24,7 @@ func main() {
 	app.Get("/", func(res *minima.Response, req *minima.Request) {
 		res.OK().Send("Hello World")
 	})
-	app.Listen(GetENV("PORT"))
+	app.Listen(":"+GetENV("PORT"))
 }
 
 func Init() {
