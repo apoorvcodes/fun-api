@@ -8,7 +8,7 @@ import (
 	"github.com/TeamIndex/Backend/schema"
 )
 
-func readdir(path string) *os.File{
+func readdir(path string) *os.File {
 	file, err := os.Open(path)
 	if err != nil {
 		panic(err)
@@ -21,7 +21,7 @@ func ParseJokes() []schema.Joke {
 	// jsonFile := readdir("./jokes/index.json")
 	byteValue, _ := ioutil.ReadFile("./jokes/index.json")
 	var jokes []schema.Joke
-    err := json.Unmarshal(byteValue, &jokes)
+	err := json.Unmarshal(byteValue, &jokes)
 	if err != nil {
 		panic(err)
 	}
