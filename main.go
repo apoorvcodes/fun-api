@@ -16,6 +16,10 @@ func main() {
 	app := minima.New()
 	app.Use(cors.New().Default())
 	app.UseRaw(middleware.Logger)
+	app.Static("/static", "./Static")
+	app.NotFound(func(res *minima.Response, req *minima.Request) {
+		res.Render("./Static/notfound.html", req.Path())
+	})
 	app.UseRouter(router.MainRouter())
 	app.Get("/", func(res *minima.Response, req *minima.Request) {
 		res.OK().Send("Hello World")
