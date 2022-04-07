@@ -28,3 +28,15 @@ func ParseJokes() []schema.Joke {
 	return jokes
 
 }
+
+
+func ParseFacts() []schema.Fact {
+	byteValue, _ := ioutil.ReadFile("./facts/index.txt")
+	var facts []schema.Fact
+	err := json.Unmarshal(byteValue, &facts)
+	if err != nil {
+		panic(err)
+	}
+	return facts
+}
+

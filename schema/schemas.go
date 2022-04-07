@@ -6,3 +6,9 @@ type Joke struct {
     Setup    string    `json:"setup"`
 	Punchline   string    `json:"punchline"`
 }
+
+
+type Fact struct {
+    Text string `json:"text"`
+    Source string `json:"source"`
+}

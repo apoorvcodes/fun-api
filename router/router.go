@@ -9,5 +9,6 @@ func MainRouter() *minima.Router {
     router.Get("/meme/:subreddit/:count", MemeRouter())
 	router.Get("/onthisday/:type", OnThisDayRoute())
 	router.Get("/story", ShortStoryRoute())
+	router.Get("/facts", FactRoute())
 	return router
 }
