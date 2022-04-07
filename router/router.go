@@ -6,5 +6,6 @@ func MainRouter() *minima.Router {
 	router := minima.NewRouter()
 	router.Get("/jokes/:type", JokeRoute())
 	router.Get("/news/:query", NewsRoute())
+    router.Get("/meme/:subreddit/:count", MemeRouter())
 	return router
 }

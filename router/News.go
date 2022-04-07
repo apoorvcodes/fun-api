@@ -1,11 +1,8 @@
 package router
 
 import (
-	// "fmt"
-
 	"fmt"
 	"os"
-
 	"github.com/gominima/go-requests"
 	"github.com/gominima/minima"
 )
