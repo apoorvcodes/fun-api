@@ -16,9 +16,9 @@ func main() {
 	app := minima.New()
 	app.Use(cors.New().AllowAll())
 	app.UseRaw(middleware.Logger)
-	app.Static("/static", "./Static")
+	app.Static("/static", "./static")
 	app.NotFound(func(res *minima.Response, req *minima.Request) {
-		res.Render("./Static/notfound.html", req.Path())
+		res.Render("./static/notfound.html", req.Path())
 	})
 	app.UseRouter(router.MainRouter())
 	app.Get("/", func(res *minima.Response, req *minima.Request) {
