@@ -1,8 +1,7 @@
 
-# Index[0] Backend
+# Backend
 
-Backend for the Index[0] entery for Twt hackathon
-
+Basic Api setup with minima
 
 ## Environment Variables
 
